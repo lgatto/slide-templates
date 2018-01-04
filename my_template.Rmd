@@ -5,7 +5,6 @@ author: "[Laurent Gatto](#laurent-gatto)"
 date: "2018/01/01"
 output:
   xaringan::moon_reader:
-    self_contained: true
     css: ["default", "default-fonts", "font-awesome.css"]
     nature:
       highlightStyle: github
