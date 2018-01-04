@@ -1,0 +1,59 @@
+---
+title: "Title comes here"
+subtitle: "Subtitle comes here"
+author: "[Laurent Gatto](#laurent-gatto)"
+date: "2018/01/01"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "default-fonts", "font-awesome.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: middle
+name: cc-by
+
+These slides are available under a **creative common
+[CC-BY license](http://creativecommons.org/licenses/by/4.0/)**. You are
+free to share (copy and redistribute the material in any medium or
+format) and adapt (remix, transform, and build upon the material) for
+any purpose, even commercially
+<img height="20px" alt="CC-BY" src="./img/cc1.jpg" />.
+
+---
+class: middle
+name: laurent-gatto
+
+
+
+<img src="./img/lgatto3b.png" width = "180px"/>
+### Laurent Gatto
+<i class="fas fa-flask"></i>&nbsp;[Computational Proteomics Unit](https://lgatto.github.io/cpu-lab/) (CPU)<br />
+<i class="fas fa-map-marker-alt"></i>&nbsp;University of Cambridge<br />
+<i class="fas fa-envelope"></i>&nbsp;lg390@cam.ac.uk<br />
+<i class="fas fa-home"></i>&nbsp;https://lgatto.github.io<br />
+<i class="fab fa-twitter"></i>&nbsp;[@lgatto](https://twitter.com/lgatt0/)<br />
+<i class="fab fa-github"></i>&nbsp;[lgatto](https://github.com/lgatto/)<br />
+<img width="20px" align="top" alt="orcid" src="./img/orcid_64x64.png" />&nbsp;[0000-0002-1520-2268](https://orcid.org/0000-0002-1520-2268)<br />
+<img width="20px" align="top" alt="Impact story" src="./img/keybase.png"/>&nbsp;[lgatto](https://keybase.io/lgatto)<br />
+<img width="20px" align="top" alt="Google scholar" src="./img/gscholar.png"/>&nbsp;[Google scholar](https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en)<br />
+<img width="20px" align="top" alt="Impact story" src="./img/impactstory-logo.png"/>&nbsp;[Impact story](https://profiles.impactstory.org/u/0000-0002-1520-2268)<br />
+<i class="fas fa-pencil-alt"></i>&nbsp;[dissem.in](https://dissem.in/r/6231/laurent-gatto)<br />
+<!-- <i class="fab fa-linkedin"></i>&nbsp;https://www.linkedin.com/in/lgatto/<br /> -->
+
+
+
+---
+class: center, middle, inverse
+
+Thank you for your attention
+
+Link to [slides]().
+
