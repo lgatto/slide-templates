@@ -8,7 +8,7 @@ template is available
 [here](https://rawgit.com/lgatto/slide-templates/master/my_template.html).
 
 
-### Cheat sheets and documentation:
+#### Cheat sheets
 
 - The `xaringan` [wiki](https://github.com/yihui/xaringan/wiki)
 - The `xaringan` [slides](https://slides.yihui.name/xaringan/)
@@ -19,7 +19,7 @@ template is available
 - The `remark.js` [wiki](https://github.com/gnab/remark/wiki)
 
 
-### Issues
+#### Issues
 
 - Doesn't support [references](https://github.com/yihui/xaringan/issues/26)
 
