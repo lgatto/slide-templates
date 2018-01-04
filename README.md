@@ -8,7 +8,7 @@ template is available
 [here](https://rawgit.com/lgatto/slide-templates/master/my_template.html).
 
 
-#### Cheat sheets
+#### Cheat sheet
 
 - The `xaringan` [wiki](https://github.com/yihui/xaringan/wiki)
 - The `xaringan` [slides](https://slides.yihui.name/xaringan/)
@@ -18,6 +18,10 @@ template is available
 - The `remark.js` [slides](https://remarkjs.com/)
 - The `remark.js` [wiki](https://github.com/gnab/remark/wiki)
 
+To use is, copy `my_template.Rmd`, `font-awesome.css` and the `img`
+directory.
+
+To compile, run `Rscript -e "rmarkdown::render('my_template.Rmd')"`.
 
 #### Issues
 
