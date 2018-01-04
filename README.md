@@ -2,11 +2,13 @@
 
 ## xaringan
 
-This template uses Yihui Xie's `xaringan` package, that uses R markdown
-and `remark.js` to generate fantastic presentations.
+This template uses Yihui Xie's `xaringan` package, that uses R
+markdown and `remark.js` to generate fantastic presentations. My
+template is available
+[here](https://rawgit.com/lgatto/slide-templates/master/my_template.html).
 
 
-Cheat sheets and documentation:
+### Cheat sheets and documentation:
 
 - The `xaringan` [wiki](https://github.com/yihui/xaringan/wiki)
 - The `xaringan` [slides](https://slides.yihui.name/xaringan/)
@@ -17,9 +19,11 @@ Cheat sheets and documentation:
 - The `remark.js` [wiki](https://github.com/gnab/remark/wiki)
 
 
-Issues
+### Issues
 
 - Doesn't support [references](https://github.com/yihui/xaringan/issues/26)
 
 ## Beamer
+
+TODO
 
