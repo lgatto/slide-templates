@@ -5,7 +5,7 @@ author: "[Laurent Gatto](#laurent-gatto)"
 date: "2018/01/01"
 output:
   xaringan::moon_reader:
-    css: ["default", "default-fonts", "font-awesome.css"]
+    css: ["default", "default-fonts", "my.css"]
     nature:
       highlightStyle: github
       highlightLines: true
@@ -31,7 +31,7 @@ class: middle
 name: laurent-gatto
 
 
-
+.left-col-50[
 <img src="./img/lgatto3b.png" width = "180px"/>
 ### Laurent Gatto
 <i class="fas fa-flask"></i>&nbsp;[Computational Proteomics Unit](https://lgatto.github.io/cpu-lab/) (CPU)<br />
@@ -46,13 +46,16 @@ name: laurent-gatto
 <img width="20px" align="top" alt="Impact story" src="./img/impactstory-logo.png"/>&nbsp;[Impact story](https://profiles.impactstory.org/u/0000-0002-1520-2268)<br />
 <i class="fas fa-pencil-alt"></i>&nbsp;[dissem.in](https://dissem.in/r/6231/laurent-gatto)<br />
 <!-- <i class="fab fa-linkedin"></i>&nbsp;https://www.linkedin.com/in/lgatto/<br /> -->
+]
+
+.rigth-col-50[
+
+**Acknowledgements**: ...
+
+## Thank you for your attention
+
+### Find the slides [online](https://rawgit.com/lgatto/slide-templates/master/my_template.html).
+]
 
 
-
----
-class: center, middle, inverse
-
-Thank you for your attention
-
-Find the slides [online](https://rawgit.com/lgatto/slide-templates/master/my_template.html).
 
