@@ -28,15 +28,26 @@ format) and adapt (remix, transform, and build upon the material) for
 any purpose, even commercially
 <img height="20px" alt="CC-BY" src="./img/cc1.jpg" />.
 
+
+---
+
+class: middle, center, inverse
+
+## New section
+
+---
+class: middle, center
+
+## Content
+
 ---
 class: middle
 name: laurent-gatto
 
-
 .left-col-50[
 <img src="./img/lgatto3b.png" width = "180px"/>
 ### Laurent Gatto
-<i class="fas fa-flask"></i>&nbsp;[Computational Proteomics Unit](https://lgatto.github.io/cpu-lab/) (CPU)<br />
+<i class="fas fa-flask"></i>&nbsp;[Computational Proteomics Unit](https://lgatto.github.io/cpu-lab/)<br />
 <i class="fas fa-map-marker-alt"></i>&nbsp;University of Cambridge<br />
 <i class="fas fa-envelope"></i>&nbsp;lg390@cam.ac.uk<br />
 <i class="fas fa-home"></i>&nbsp;https://lgatto.github.io<br />
