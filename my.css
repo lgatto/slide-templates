@@ -2,6 +2,8 @@
 
 
 /* Two-column layout */
+/* see .pull-left and .pull-right, which probably makes these redundant  */
+
 .left-col-50 {
   width: 50%;
   float: left;
