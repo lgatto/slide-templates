@@ -1,9 +1,11 @@
 @import url(https://use.fontawesome.com/releases/v5.0.2/css/all.css);
 
+a, a > code {
+  color: rgb(70, 130, 180);
+  text-decoration: none;
+}
 
 /* Two-column layout */
-/* see .pull-left and .pull-right, which probably makes these redundant  */
-
 .left-col-50 {
   width: 50%;
   float: left;
