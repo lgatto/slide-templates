@@ -18,7 +18,7 @@ template is available
 - The `remark.js` [slides](https://remarkjs.com/)
 - The `remark.js` [wiki](https://github.com/gnab/remark/wiki)
 
-To use is, copy `my_template.Rmd`, `my.css` and the `img` directory.
+To use it, copy `my_template.Rmd`, `my.css` and the `img` directory.
 
 To compile, run `Rscript -e "rmarkdown::render('my_template.Rmd')"`.
 
@@ -29,4 +29,3 @@ To compile, run `Rscript -e "rmarkdown::render('my_template.Rmd')"`.
 ## Beamer
 
 TODO
-
