@@ -4,8 +4,8 @@
     <title>Title comes here</title>
     <meta charset="utf-8">
     <meta name="author" content="Laurent Gatto" />
-    <link href="my_template_files/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="my_template_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="my_template_files/remark-css/default.css" rel="stylesheet" />
+    <link href="my_template_files/remark-css/default-fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="my.css" type="text/css" />
   </head>
   <body>
@@ -53,9 +53,9 @@ name: laurent-gatto
 .left-col-50[
 &lt;img src="./img/lgatto3b.png" width = "180px"/&gt;
 ### Laurent Gatto
-&lt;i class="fas fa-flask"&gt;&lt;/i&gt;&amp;nbsp;[Computational Proteomics Unit](https://lgatto.github.io/cpu-lab/)&lt;br /&gt;
-&lt;i class="fas fa-map-marker-alt"&gt;&lt;/i&gt;&amp;nbsp;University of Cambridge&lt;br /&gt;
-&lt;i class="fas fa-envelope"&gt;&lt;/i&gt;&amp;nbsp;lg390@cam.ac.uk&lt;br /&gt;
+&lt;i class="fas fa-flask"&gt;&lt;/i&gt;&amp;nbsp;[Computational Biology Group](https://lgatto.github.io/cbio-lab/)&lt;br /&gt;
+&lt;i class="fas fa-map-marker-alt"&gt;&lt;/i&gt;&amp;nbsp;de Duve Institute, UCLouvain&lt;br /&gt;
+&lt;i class="fas fa-envelope"&gt;&lt;/i&gt;&amp;nbsp;laurent.gatto@uclouvain.be&lt;br /&gt;
 &lt;i class="fas fa-home"&gt;&lt;/i&gt;&amp;nbsp;https://lgatto.github.io&lt;br /&gt;
 &lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&amp;nbsp;[@lgatto](https://twitter.com/lgatt0/)&lt;br /&gt;
 &lt;i class="fab fa-github"&gt;&lt;/i&gt;&amp;nbsp;[lgatto](https://github.com/lgatto/)&lt;br /&gt;
@@ -92,19 +92,30 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   d.head.appendChild(s);
 })();</script>
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
   }
-});
+})();
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
 (function () {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
   if (location.protocol !== 'file:' && /^https?:/.test(script.src))
     script.src  = script.src.replace(/^https?:/, '');
   document.getElementsByTagName('head')[0].appendChild(script);

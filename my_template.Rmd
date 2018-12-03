@@ -47,9 +47,9 @@ name: laurent-gatto
 .left-col-50[
 <img src="./img/lgatto3b.png" width = "180px"/>
 ### Laurent Gatto
-<i class="fas fa-flask"></i>&nbsp;[Computational Proteomics Unit](https://lgatto.github.io/cpu-lab/)<br />
-<i class="fas fa-map-marker-alt"></i>&nbsp;University of Cambridge<br />
-<i class="fas fa-envelope"></i>&nbsp;lg390@cam.ac.uk<br />
+<i class="fas fa-flask"></i>&nbsp;[Computational Biology Group](https://lgatto.github.io/cbio-lab/)<br />
+<i class="fas fa-map-marker-alt"></i>&nbsp;de Duve Institute, UCLouvain<br />
+<i class="fas fa-envelope"></i>&nbsp;laurent.gatto@uclouvain.be<br />
 <i class="fas fa-home"></i>&nbsp;https://lgatto.github.io<br />
 <i class="fab fa-twitter"></i>&nbsp;[@lgatto](https://twitter.com/lgatt0/)<br />
 <i class="fab fa-github"></i>&nbsp;[lgatto](https://github.com/lgatto/)<br />
@@ -69,6 +69,3 @@ name: laurent-gatto
 
 ### Find the slides [online](https://rawgit.com/lgatto/slide-templates/master/my_template.html).
 ]
-
-
-
