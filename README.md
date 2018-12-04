@@ -5,7 +5,7 @@
 This template uses Yihui Xie's `xaringan` package, that uses R
 markdown and `remark.js` to generate fantastic presentations. My
 template is available
-[here](https://rawgit.com/lgatto/slide-templates/master/my_template.html).
+[here](https://raw.githack.com/lgatto/slide-templates/master/my_template.html).
 
 
 #### Cheat sheet
