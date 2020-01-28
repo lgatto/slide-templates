@@ -30,4 +30,4 @@ To compile, run `Rscript -e "rmarkdown::render('my_template.Rmd')"`.
 
 See `LaTeX` directory, based on a template provided by SMCS.
 
-TODO: include some macros from older slides ([examples](https://github.com/lgatto/2019_07_18_ISCB_KULeuven/blob/master/slides.tex)).
+TODO: include some macros from older slides (for [example](https://github.com/lgatto/2019_07_18_ISCB_KULeuven/blob/master/slides.tex)).
