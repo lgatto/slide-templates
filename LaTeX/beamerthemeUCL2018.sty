@@ -1,0 +1,175 @@
+\mode<presentation>
+
+% Requirement
+\RequirePackage{tikz}
+
+
+\setbeamertemplate{navigation symbols}{}
+
+% UCL blue color (bleu fonce)
+\definecolor{UCLblue}{rgb}{0,0.1289,0.3047}
+% UCL blue color 2 (bleu ciel)
+\definecolor{UCLblue2}{rgb}{0.3647,0.7020,0.9020}
+% UCL blue color 3 (bleu gris)
+\definecolor{UCLblue3}{rgb}{0.6118,0.7176,0.8314}
+% smcs blue color
+\definecolor{SMCSblue}{rgb}{0,0.355,0.664}
+% smcs pink color
+\definecolor{SMCSpink}{rgb}{0.664,0.042,0.294}
+
+% margins setting
+\setbeamersize{text margin left=.7cm,text margin right=0.7cm}
+
+% item with rounds instead of triangles
+\setbeamertemplate{itemize items}[circle]
+
+% add the rectangles in the background
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+%   \fill[color=UCLblue2] (0,0.3) rectangle(.1,.8);
+%   \fill[color=UCLblue2] (0,0.3) rectangle(.3,.4);
+%   \fill[color=UCLblue3] (12.7,8.2) rectangle(12.8,8.7);
+  \fill[color=UCLblue2] (0.2,0.3) rectangle(.3,.8);
+  \fill[color=UCLblue2] (0.2,0.3) rectangle(.5,.4);
+  \fill[color=UCLblue3] (12.5,8.2) rectangle(12.6,8.7);
+ 
+   \ifnum\thepage<2\relax%
+    \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+    \fi
+  \end{tikzpicture}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is the SMCS template
+% Don't modify anything between this comment and the following one
+
+
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+
+% Logo UCL a gauche
+\newcommand{\LogoUCL}{%
+ \begin{textblock}{15}(1,0.8)
+  \includegraphics[width=0.7cm]{UCL_2018}
+ \end{textblock}}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Colors used in the template
+\setbeamercolor{author}{fg=UCLblue2}
+%\setbeamercolor{author}{fg=darkgray}
+\setbeamercolor{institute}{fg=UCLblue2}
+%\setbeamercolor{institute}{fg=darkgray}
+%\setbeamercolor{frametitle}{fg=SMCSblue}
+%\setbeamercolor{title}{fg=SMCSblue}
+% \setbeamercolor{title in head/foot}{fg=gray}
+% \setbeamercolor{date in head/foot}{fg=gray}
+% \setbeamercolor{author in head/foot}{fg=gray}
+%\setbeamercolor{title in head/foot}{bg=SMCSblue,fg=white}
+%\setbeamercolor{date in head/foot}{bg=SMCSblue,fg=white}
+%\setbeamercolor{author in head/foot}{bg=UCLblue,fg=white}
+%\setbeamercolor{section in head/foot}{bg=SMCSblue,fg=white}
+%\setbeamercolor{subsection in head/foot}{bg=UCLblue,fg=white}
+\setbeamercolor{item}{fg=black}
+\setbeamercolor{section in toc}{fg=SMCSblue}
+\setbeamercolor{frametitle}{fg=UCLblue,bg=UCLblue2}
+\setbeamercolor{section in head/foot}{bg=UCLblue,fg=UCLblue3}
+\setbeamercolor{subsection in head/foot}{bg=UCLblue3,fg=UCLblue}
+\setbeamercolor{title in head/foot}{fg=gray}
+\setbeamercolor{date in head/foot}{fg=gray}
+\setbeamercolor{author in head/foot}{fg=gray}
+ %\setbeamercolor{normal text}{fg=UCLblue}
+
+
+ % title page
+\setbeamertemplate{title page}{
+ \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[color=UCLblue2] (0.5,0) rectangle(\the\paperwidth,7);
+  \node[inner sep=0pt] at (2.1,8.5) {\includegraphics[width=.33\textwidth]{UCL_2018}};
+  %% \node[inner sep=0pt] at (10.5,8.5) {\includegraphics[width=.2\textwidth]{Logo_SMCS_SEUL_2010}};
+  \node[text=UCLblue, anchor=west] at (1,3) {\Large\textbf{\inserttitle}};
+  \node[text=UCLblue, anchor=west] at (1,2.5) {\textbf{\insertsubtitle}};
+    \node[text=white, anchor=west] at (1,1.5) {\textbf{\insertauthor}};
+      \node[text=white, anchor=west] at (1,1) {\insertdate};
+ \end{tikzpicture}
+}
+ 
+ 
+% Write the frame title 1cm from the left. The vskip helps for aligning the text on the SMCS logo 
+% \setbeamertemplate{frametitle}
+% {%
+%  %\vskip+1pt
+%   \vspace{.1cm}
+%   \hbox{%
+%   \begin{beamercolorbox}[wd=0.9\paperwidth,ht=-2ex,dp=1.5ex]{frametitle}%
+% %  \tikz[remember picture,overlay] {%
+% %      \draw[SMCSblue] ([yshift=-26,xshift=.9cm]current page.north west)
+% %               -- ([yshift=-26,xshift=\paperwidth-.6cm]current page.north west);}
+% %  \LogoUCL
+% %  \MyLogo
+%   % title on the left
+%   \hspace*{1ex}\insertframetitle
+%   % title on the right
+%   %\hfill\insertframetitle\hspace*{.1cm}
+%   \end{beamercolorbox}
+% }%
+% }%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Headline slides - uncomment headline in order to add section and subsection rectangles at the top
+
+% \setbeamertemplate{headline}
+% {
+%   \hbox{%
+%   \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+%     \usebeamerfont{section in head/foot}\insertsectionhead\hspace*{2ex}
+%   \end{beamercolorbox}%
+%   \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{subsection in head/foot}%
+%     \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertsubsectionhead
+%   \end{beamercolorbox}}%
+% \hspace{2cm}
+% \begin{beamercolorbox}{section in head/foot}
+% \end{beamercolorbox}%
+% }
+
+\setbeamertemplate{frametitle}
+{
+  \vspace{-.15cm}
+  \hbox{%
+  \begin{beamercolorbox}[wd=.97\paperwidth,ht=3ex,dp=1ex,left]{frametitle}%
+    \usebeamerfont{frametitle}\hspace*{2ex}\insertframetitle\hspace*{2ex}
+  \end{beamercolorbox}%
+  }
+}
+
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\hspace*{3ex}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\hspace*{2ex}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \insertframenumber{} / \inserttotalframenumber\hspace*{1ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+
+
+\mode<all>
+
+
+

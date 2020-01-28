@@ -1,0 +1,216 @@
+\documentclass{beamer}
+
+%-----------------------
+%% This template is based on a template developed by the SMCS
+%% (Statistical Methodology and Computing Service) at UCLouvain
+
+%-----------------------
+% pour faire les slides papiers :
+% \documentclass[handout, compress]{beamer}
+% \usepackage{pgfpages}
+% % 4 par page
+% \pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm, landscape]
+% % 2 par page
+% \pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+
+\usetheme{UCL2018}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xspace}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+%% For slides in French
+%% \usepackage[french]{babel}
+%% \usepackage[cyr]{aeguill}
+
+\usepackage{lipsum}
+
+\theoremstyle{example}
+\newtheorem{examplef}{Example}
+\newtheorem{examplesf}{Examples}
+\newcommand{\ei}{\end{itemize}}
+
+\usepackage{xmpincl}
+
+
+\title{Title of the presentation}
+\author[\url{http://lgatto.github.io/about}]{Laurent Gatto}
+\date{\today}
+\institute[]{CBIO, de Duve Institute, UCLouvain}
+
+
+\begin{document}
+
+\pdfinfo {/Author(Laurent Gatto - UCLouvain)}
+
+
+%-----------------------------------------------
+% Title page
+%-----------------------------------------------
+
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+
+\begin{frame}%[noframenumbering]
+%\thispagestyle{empty}
+
+% Logo UCL a gauche
+\begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,1);
+  \node[inner sep=0pt] at (1.7,.5) {\includegraphics[width=.33\textwidth]{UCL_2018}};
+ \end{tikzpicture}
+\vspace{.1cm}
+
+\textbf{Abstract:} \lipsum[1] 
+
+\end{frame}
+
+
+\begin{frame}{Frame title}
+
+  \textcolor{SMCSblue}{Title}\newline
+  Some sentence or small paragraph
+
+  \bigskip
+
+  \begin{block}{Block title}
+    Block text block text block text block text block text block text
+    block text.
+  \end{block}
+
+\end{frame}
+
+
+%-----------------------------------------------
+% Table of content
+%-----------------------------------------------
+
+\AtBeginSection[]{
+  \setbeamercolor{background canvas}{bg=UCLblue2}
+  \setbeamercolor{section in toc}{fg=UCLblue}
+  \setbeamercolor{subsection in toc}{fg=UCLblue}
+  \setbeamerfont{section in toc}{size=\large}
+
+  \mode<handout>{
+    \setbeamercolor{background canvas}{bg=white}
+    \setbeamercolor{section in toc}{fg=UCLblue}
+    \setbeamercolor{subsection in toc}{fg=UCLblue}
+  }
+
+  \begin{frame}[plain]
+    \frametitle{Outlines}
+    \tableofcontents[currentsection,hideothersubsections]
+  \end{frame}
+
+  \setbeamercolor{background canvas}{bg=white}
+}
+
+% \AtBeginSubsection[]
+% {
+% \begin{frame}
+% \frametitle{Sommaire}
+% %\tableofcontents[currentsection,currentsubsection,hideothersubsections]
+% \tableofcontents[ 
+% currentsection,
+% currentsubsection, 
+% hideothersubsections, 
+% sectionstyle=show/shaded, 
+% subsectionstyle=show/shaded/hide, 
+% ] 
+% \end{frame}
+% }
+
+
+%-----------------------------------------------
+% Content
+%-----------------------------------------------
+
+\section{Introduction}
+
+\begin{frame}{Introduction}
+
+In the 1970s \textbf{S}, a language to program with data, is developed
+at Bell Laboratories by a team managed by John M. Chambers.\newline
+
+At the end of the 1980s \textbf{S-Plus}, a commercial
+software.\newline
+
+\textbf{R} was created in 1997 by Ross Ihaka and Robert Gentleman at
+the Auckland University (New Zealand).\newline
+
+\textbf{R} is a \textit{free} software (GNU Public Licence)\newline
+
+Many statistical tools included in \textbf{R} and it is possible to
+create more (thousands of packages made by users can be found on
+internet)\newline
+
+\url{https://cran.r-project.org/}
+
+\end{frame}
+
+
+%-----------------------------------------------
+% New section
+%-----------------------------------------------
+
+\section{Vectors}
+
+\subsection{Creating a vector}
+
+
+\begin{frame}[fragile]{Concatenation}
+
+  Remark : By default R displays 7 decimals. Here is the command to
+  modify it: \texttt{options(digits=2)} (two decimals).
+
+\end{frame}
+
+
+\begin{frame}[fragile]{\texttt{seq} et \texttt{rep}}
+
+  \vspace{-.2cm}
+  \begin{itemize}
+  \item \texttt{seq} allows to make a vector defined by a sequence:
+
+  \item \texttt{rep} creates a vector which is the repetition of numbers or strings:
+  \end{itemize}
+
+\end{frame}
+
+
+%-----------------------------------------------
+% Final slide
+%-----------------------------------------------
+
+\begin{frame}%[noframenumbering]
+%\thispagestyle{empty}
+
+% Logo UCL a gauche
+\begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,1);
+  \node[inner sep=0pt] at (1.7,.5) {\includegraphics[width=.33\textwidth]{UCL_2018}};
+ \end{tikzpicture}
+\vspace{.1cm}
+
+
+Acknowledgement:
+
+\bigskip
+
+Contact:
+
+\begin{center}
+  laurent.gatto@uclouvain.be – \url{lgatto.github.io/about}
+\end{center}
+ 
+\end{frame}
+
+
+\end{document}
